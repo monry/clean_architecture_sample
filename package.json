@@ -1,0 +1,21 @@
+{
+  "name": "clean_architecture_sample",
+  "version": "1.0.0",
+  "description": "Sample project for Clean Architecture for Unity",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monry/clean_architecture_sample.git"
+  },
+  "author": "Tetsuya Mori",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/monry/clean_architecture_sample/issues"
+  },
+  "homepage": "https://github.com/monry/clean_architecture_sample#readme"
+}
