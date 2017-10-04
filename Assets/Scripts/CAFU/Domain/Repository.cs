@@ -3,7 +3,7 @@ namespace CAFU.Domain {
 
     public interface IRepository {}
 
-    public abstract class Repository<T> where T : Repository<T>, new() {
+    public abstract class Repository<T> : IRepository where T : Repository<T>, new() {
 
         private static T instance;
 
@@ -20,5 +20,7 @@ namespace CAFU.Domain {
         }
 
     }
+
+    // TODO: ルーティング専用の Repository を作る
 
 }

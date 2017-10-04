@@ -3,10 +3,13 @@ using UnityEngine;
 
 namespace CAFU.Presentation.View {
 
-    public interface IViewController {
+    public interface IViewController<in TPresenter, in TRouter> where TPresenter : IPresenter where TRouter : IRouter {
+
+        void Inject(TPresenter presenter, TRouter router);
+
     }
 
-    public abstract class ViewController<T, TPresenter, TRouter> : MonoBehaviour, IViewController
+    public abstract class ViewController<T, TPresenter, TRouter> : MonoBehaviour, IViewController<TPresenter, TRouter>
         where T : ViewController<T, TPresenter, TRouter>
         where TPresenter : IPresenter
         where TRouter : IRouter {
@@ -18,7 +21,7 @@ namespace CAFU.Presentation.View {
             }
             private set {
                 this.presenter = value;
-                this.presenter.SetViewController(this);
+                this.presenter.SetViewController((IViewController<IPresenter, IRouter>)this);
             }
         }
 
