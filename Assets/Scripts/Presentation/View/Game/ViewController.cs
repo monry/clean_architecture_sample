@@ -1,16 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using CASample.Utility;
-using UnityEngine;
-
+﻿
 namespace CASample.Presentation.View.Game {
 
-    public class Root : RootBase<Root> {
-
-        public Presenter.Game PresenterGame { get; set; }
+    public class ViewController : CAFU.Presentation.View.ViewController<ViewController, Presenter.Game, Domain.UseCase.GameRouter> {
 
         protected override void OnInitialized() {
-            // ココで Presenter の初期化かな？
+            this.Inject(new Presenter.Game(), new Domain.UseCase.GameRouter());
             // あと、キーボードイベントもココで受ける感じかな？
         }
 

@@ -1,14 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using CASample.Utility;
-using UnityEngine;
+﻿
+using CAFU.Domain;
+using CAFU.Presentation;
 
 namespace CASample.Presentation.View.Game_Result {
 
-    public class Root : RootBase<Root> {
+    public class ViewController : CAFU.Presentation.View.ViewController<ViewController, IPresenter, IRouter> {
 
         protected override void OnInitialized() {
-
         }
 
     }
