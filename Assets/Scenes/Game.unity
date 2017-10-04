@@ -992,7 +992,7 @@ GameObject:
   - component: {fileID: 1011546145}
   - component: {fileID: 1011546146}
   m_Layer: 0
-  m_Name: Score
+  m_Name: Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

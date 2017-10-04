@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace CASample.Presentation.View.Game {
 
-    public class Score : MonoBehaviour {
+    public class Point : MonoBehaviour {
 
         [SerializeField]
         private Text label;
@@ -14,8 +14,8 @@ namespace CASample.Presentation.View.Game {
             }
         }
 
-        public void Refresh(Domain.Model.GameStatus gameStatus) {
-            this.Label.text = string.Format("{0}", gameStatus.Score);
+        public void Refresh(Domain.Model.GameScore gameScore) {
+            this.Label.text = string.Format("{0}", gameScore.Point);
         }
 
     }
