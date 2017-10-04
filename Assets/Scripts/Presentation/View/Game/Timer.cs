@@ -14,8 +14,8 @@ namespace CASample.Presentation.View.Game {
             }
         }
 
-        public void Refresh(Domain.Model.GameStatus gameStatus) {
-            this.Label.text = string.Format("{0}", gameStatus.Time);
+        public void Refresh(Domain.Model.GameScore gameScore) {
+            this.Label.text = string.Format("{0}", gameScore.Time);
         }
 
     }

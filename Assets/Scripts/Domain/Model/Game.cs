@@ -15,15 +15,15 @@ namespace CASample.Domain.Model {
     /// <summary>
     /// 右上に表示する時間とスコア
     /// </summary>
-    public class GameStatus {
+    public class GameScore {
 
         public int Time { get; set; }
 
-        public int Score { get; set; }
+        public int Point { get; set; }
 
-        public GameStatus(int time, int score) {
+        public GameScore(int time, int point) {
             this.Time = time;
-            this.Score = score;
+            this.Point = point;
         }
 
     }

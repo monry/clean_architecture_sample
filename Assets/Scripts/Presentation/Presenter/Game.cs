@@ -7,15 +7,15 @@ namespace CASample.Presentation.Presenter {
 
     // View と UseCase (というか Model ？) との橋渡し
 
-    public class Game {
+    public class Game : CAFU.Presentation.Presenter {
 
-        public void OnPointerUpButtonBack(PointerEventData pointerEventData) {
+        public void BackToTitle(PointerEventData pointerEventData) {
             // 戻る処理
             // これも UseCase にやらせるべきなのかな？
         }
 
-        public void OnCollisionEnter2DReflectionBoard(Collision2D collision) {
-            // 多分ボールがぶつかった処理
+        public void BounceBackBall(Collision2D collision) {
+            // ボールがぶつかった処理
         }
 
     }
