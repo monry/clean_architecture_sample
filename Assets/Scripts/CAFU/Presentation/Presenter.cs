@@ -12,7 +12,7 @@ namespace CAFU.Presentation {
 
     }
 
-    public class Presenter : IPresenter {
+    public class PresenterBase : IPresenter {
 
         public IViewController<IPresenter, IRouter> ViewController { get; private set; }
 

@@ -9,8 +9,8 @@ namespace CAFU.Presentation.View {
 
     }
 
-    public abstract class ViewController<T, TPresenter, TRouter> : MonoBehaviour, IViewController<TPresenter, TRouter>
-        where T : ViewController<T, TPresenter, TRouter>
+    public abstract class ViewControllerBase<T, TPresenter, TRouter> : MonoBehaviour, IViewController<TPresenter, TRouter>
+        where T : ViewControllerBase<T, TPresenter, TRouter>
         where TPresenter : IPresenter
         where TRouter : IRouter {
 

@@ -4,7 +4,7 @@ using CASample.Data.DataStore;
 
 namespace CASample.Domain.Repository {
 
-    public class Score : Repository<Score> {
+    public class Score : RepositoryBase<Score> {
 
         public Data.Entity.Score Load() {
             return ScoreDataStoreFactory.CreateInstance().LoadScore();

@@ -9,6 +9,12 @@ namespace CASample.Domain.UseCase {
 
         public Repository.Score RepositoryScore { get; set; }
 
+        public Presentation.Presenter.Game PresenterGame { get; set; }
+
+        public void BounceBackBall() {
+            this.PresenterGame.AddForceToBall(Vector2.up);
+        }
+
     }
 
 }
